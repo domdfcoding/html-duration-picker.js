@@ -731,13 +731,11 @@
         // set inline-styles for positioning
         scrollUpBtn.setAttribute(
           'style',
-          `height:${inputBox.offsetHeight / 2 - 1}px !important; top: 1px;`,
+          `height: 48% !important; top: 0;`,
         );
         scrollDownBtn.setAttribute(
           'style',
-          `height:${inputBox.offsetHeight / 2 - 1}px !important; top: ${
-            inputBox.offsetHeight / 2 - 1
-          }px;`,
+          `height: 48% !important; top: 48%;`,
         );
 
         // Create the carets in the buttons. These can be replaced by images, font icons, or text.
@@ -820,7 +818,7 @@
         controlsDiv.setAttribute(
           'style',
           `left: ${totalInputBoxWidth - 20}px;
-        height:${inputBox.offsetHeight}px;`,
+        height: 100%;`,
         );
 
         // Add buttons to controls div
@@ -835,7 +833,7 @@
         // set inline styles
         controlWrapper.setAttribute(
           'style',
-          `width: ${totalInputBoxWidth}px; margin-left: ${inputBoxLeftMargin}; margin-right: ${inputBoxRightMargin};`,
+          `width: ${totalInputBoxWidth}px; margin-left: ${inputBoxLeftMargin}; margin-right: ${inputBoxRightMargin}; overflow: hidden;`,
         );
         // add the div just before the picker
         inputBox.parentNode.insertBefore(controlWrapper, inputBox);
