@@ -665,6 +665,7 @@
     getInputFields.forEach((inputBox) => {
       // Set the default text and apply some basic styling to the duration picker
       if (!(inputBox.getAttribute('data-upgraded') == 'true')) {
+        inputBox.type = "text";
         const currentInputBoxStyle = inputBox.currentStyle || window.getComputedStyle(inputBox);
         const inputBoxRightMargin = currentInputBoxStyle.marginRight;
         const inputBoxLeftMargin = currentInputBoxStyle.marginLeft;
